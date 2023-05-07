@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS for BNOTK developers</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <app-header>
+      <div class="wrapper">
+        <p class="example">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+      </div>
+    </app-header>
+    <hr />
+
+    <app-button>
+      <p class="example alert" id="blockedUser">BLOCKED USER</p>
+      <button onclick="addColor('alert')">Block this User</button>
+    </app-button>
+    <hr />
+
+    <app-link>
+      <a href="./theory.html">THEORY</a>
+      <a href="./optimize-example.html">optimze</a>
+      <a href="./homework.html">HOMEWORK</a>
+    </app-link>
+  </body>
+
+  <script>
+    function addColor(el) {
+      const par = document.getElementsByClassName(el)[0];
+      if (par) {
+        par.style.color = "red";
+      }
+    }
+  </script>
+</html>

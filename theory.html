@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin-left: 100px;
+        margin-right: 100px;
+        font-family: sans-serif;
+      }
+      ul {
+        margin-top: -1rem;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CONTROL YOUR CSS CODE:</h1>
+    <p>
+      The aim of this training is to teach you the fundamental principles of CSS that will always help you have control
+      over styling.
+    </p>
+    <h2>Control means:</h2>
+    <ul>
+      <li>no style conflicts,</li>
+      <li>no doubts whether a certain style is necessary,</li>
+      <li>no accidental overriding of styles,</li>
+      <li>no endless tasks related to bugs in displaying certain elements,</li>
+      <li><em> …because we want to work efficiently and effectively :) </em></li>
+    </ul>
+
+    <h4>1. <span class="yellow">Inheriting</span> styling rules:</h4>
+    <ul>
+      <li>font-family</li>
+      <li>font-size</li>
+      <li>font-weight</li>
+      <li>color</li>
+      <li>line-height</li>
+      <li>text-align</li>
+      <li>
+        <em> …and many more (mostly <span class="yellow">font-specific</span>) </em>
+      </li>
+    </ul>
+
+    <h4>2. Three ways to define styles in CSS:</h4>
+    <ul>
+      <li>Default declarations of a browser (user-agent styles)</li>
+      <li><span class="yellow">External</span> stylesheets (external files.css)</li>
+      <li><span class="yellow">Internal</span> styles (within the &lt;style&gt; element)</li>
+      <li><span class="yellow">Inline</span> styles (within the &lt;element style="..."&gt; attribute)</li>
+    </ul>
+
+    <h4>3. Selector specificity:</h4>
+    <ul>
+      <li>The number of <span class="yellow">ID</span> selectors in the selector.</li>
+      <li>The number of <span class="yellow">class</span> selectors in the selector.</li>
+      <li>The number of <span class="yellow">tag</span> and pseudo-element selectors in the selector.</li>
+      <li><em>…more specific selectors</em></li>
+      <li>The <span class="yellow">!important</span> value set on the style declarations.</li>
+    </ul>
+
+    <h4>4. The order in which styles are defined:</h4>
+    <ul>
+      <li>Styles are applied in the order they are defined.</li>
+      <li>Styles defined <span class="yellow">later</span> in the document can override styles defined earlier.</li>
+      <li>
+        This is known as the <span class="yellow">"last rule"</span> and is an important aspect of the CSS cascade.
+      </li>
+    </ul>
+
+    <h4>5. <span class="yellow">!important</span> side effects:</h4>
+    <ul>
+      <li>Overrides the specificity of other selectors</li>
+      <li>Can make debugging harder</li>
+      <li>Can make maintenance harder</li>
+      <li>Can create a false sense of urgency</li>
+    </ul>
+
+    <h4>6. KISS and DRY code</h4>
+    <ul>
+      <li>
+        Never write styles without knowing why they are written. Check each line of code in the inspector to make sure
+        it is necessary.
+      </li>
+    </ul>
+
+    <a href="/">Back to main page</a>
+  </body>
+</html>
