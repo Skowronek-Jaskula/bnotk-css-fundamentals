@@ -1,6 +1,5 @@
 body {
   font-family: sans-serif;
-  font-size: 32px;
   border: 5px grey solid;
   padding: 40px;
 }
@@ -11,9 +10,20 @@ body {
 
 .alert {
   color: yellow;
+  font-size: 32px;
   background-color: red;
 }
 
 a {
   color: #008000;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+hr {
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
