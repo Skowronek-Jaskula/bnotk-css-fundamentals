@@ -1,5 +1,24 @@
 {
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.fontSize": 16,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
+  "prettier.proseWrap": "never",
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
 }

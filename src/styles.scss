@@ -1,0 +1,74 @@
+@use "../node_modules/bootstrap/scss/bootstrap";
+
+// OVERRIDING OF DEFAULTS:
+
+body {
+  background-color: #eee;
+  font-family: sans-serif;
+  margin: 1rem 2rem 0;
+}
+
+p {
+  margin: 0;
+}
+
+ol {
+  list-style-type: lower-alpha;
+  margin-top: 3rem;
+}
+
+hr {
+  margin-block: 2rem;
+}
+
+pre {
+  background-color: #333;
+  color: yellow;
+  padding-top: 1rem;
+}
+
+// UTILITY CLASSES:
+
+.links {
+  background: #eee;
+  padding: 2rem 1rem 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+// COMPONENTS STYLING:
+
+.card {
+  $_self: &;
+
+  background-color: #fff;
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem 1rem;
+
+  &__heading {
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  &__list {
+    &-item {
+      &--italic {
+        font-style: italic;
+      }
+    }
+  }
+
+  &--centered {
+    text-align: center;
+
+    .card__list {
+      list-style-type: none;
+      padding: 0;
+    }
+  }
+}

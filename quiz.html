@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="row mt-5">
+        <div class="col-6">
+          <h4>1. How does inheritance work in CSS?</h4>
+          <ol>
+            <li>
+              Styles are inherited only by child elements, so the color is blue.
+            </li>
+            <li>
+              Styles are inherited only by parent elements, so the color is
+              black (browser default).
+            </li>
+            <li>
+              Styles are inherited by child elements and can be overridden, so
+              the color blue, but can be changed by the child styling.
+            </li>
+          </ol>
+        </div>
+        <div class="col-5">
+          <p>Example HTML:</p>
+
+          <pre>
+    &lt;div class="parent"&gt;
+      &lt;p class="child"&gt;What is my color?&lt;/p&gt;
+    &lt;/div&gt;            
+          </pre>
+
+          <p>Example CSS:</p>
+          <pre>
+    .parent {
+       color: blue;
+       font-weight: 400;
+    }
+            
+    .child {
+      font-weight: bold;
+    }      
+          </pre>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-6">
+          <h4>
+            2. Which of the following methods is incorrect for defining styles
+            in CSS?
+          </h4>
+          <ol>
+            <li>Nesting styles</li>
+            <li>Inline style</li>
+            <li>Writing styles in a JavaScript file</li>
+          </ol>
+        </div>
+        <div class="col-5">
+          <p>Example HTML:</p>
+
+          <pre>
+    &lt;p style="color: red;"&gt;Text&lt;/p&gt;
+          </pre>
+
+          <p>Example CSS:</p>
+          <pre>
+    .nested .nested__item {
+       font-size: 14px;
+    }        
+          </pre>
+
+          <p>Example JS:</p>
+          <pre>
+    document.getElementById("el").style.color = "red"
+          </pre>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-6">
+          <h4>3. What is "specificity" of selectors in CSS?</h4>
+          <ol>
+            <li>
+              It determines how many times a selector is used in the code.
+            </li>
+            <li>
+              It determines the order in which style declarations are applied.
+            </li>
+            <li>
+              It determines the priority of a selector when overriding styles.
+            </li>
+          </ol>
+        </div>
+        <div class="col-5">
+          <p>Example HTML:</p>
+
+          <pre>
+    &lt;p id="myId" class="my-class"&gt;What is my color?&lt;/p&gt;
+    </pre
+          >
+          <p>Example CSS:</p>
+          <pre>
+    p {
+       color: blue;
+    }
+            
+    .my-class {
+        color: red;
+    }
+            
+    #myId {
+       color: green;
+    }
+
+</pre
+          >
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-6">
+          <h4>4. How does the order of styles change in CSS?</h4>
+          <ol>
+            <li>From top to bottom.</li>
+            <li>From bottom to top.</li>
+            <li>It doesn't matter; the order has no impact.</li>
+          </ol>
+        </div>
+
+        <div class="col-5">
+          <p>Example CSS:</p>
+          <pre>
+    p {
+      color: red; 
+    }
+    
+    p {
+      color: blue; 
+    }
+          </pre>
+        </div>
+      </div>
+      <hr />
+
+      <div class="row">
+        <div class="col-6">
+          <h4>5. What does the "!important" expression mean in CSS?</h4>
+          <ol>
+            <li>It instructs the browser to ignore that style declaration.</li>
+            <li>It gives higher priority to the style than others.</li>
+            <li>It is an error and should not be used.</li>
+          </ol>
+        </div>
+
+        <div class="col-5">
+          <p>Example CSS:</p>
+          <pre>
+    p {
+      color: blue !important;
+    }
+    
+    p {
+      color: red;
+    }
+    
+        </pre
+          >
+        </div>
+      </div>
+
+      <hr />
+      <div class="row">
+        <div class="col-6">
+          <h4>6. What are the principles of KISS and DRY in CSS coding?</h4>
+
+          <ol>
+            <li>
+              KISS - "Keep It Simple, Stupid"; DRY - "Don't Repeat Yourself."
+            </li>
+
+            <li>
+              KISS - "Keep It Short and Sweet"; DRY - "Do Rewrite Yourself."
+            </li>
+
+            <li>
+              KISS - "Keep It Stylish and Simple"; DRY - "Do Repeat Yourself."
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <hr />
+      <div class="row">
+        <div class="col-2">
+          <div class="links">
+            <a class="link__item" href="/">Back to main page</a>
+
+            <div class="col-2">
+              <a class="link__item" href="./quiz.html">QUIZ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col">
+          <img
+            src="https://media.tenor.com/QWdPngpHxZ8AAAAC/family-guy-css.gif"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
